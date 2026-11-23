@@ -1,2 +1,3 @@
-# orbit-garden-svg-lab
-A polished interactive motion playground with 30 original animated SVG companions, a TypeScript engine, accessible controls, and complete documentation.
+# Orbit Garden — SVG Character Playground
+
+A polished, accessible playground featuring 30 original animated SVG companions. Built with TypeScript and Vite; includes search, mood filters, random discovery, motion controls, tests, and documentation.
