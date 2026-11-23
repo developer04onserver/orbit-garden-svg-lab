@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1b">
+  <meta name="description" content="Meet 30 original animated SVG companions in Orbit Garden.">
+  <title>Orbit Garden — A tiny universe of characters</title>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar"><a class="brand" href="#"><span class="mark">✳</span> ORBIT<span class="muted">GARDEN</span></a><span class="topnote"><i></i> 30 small personalities, one big universe</span></header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">THE COMPANION COLLECTION / 001</p><h1>Find your <em>orbit.</em></h1>
+        <p class="intro">A pocket-sized universe of animated characters. Each one has a mood, a little motion, and a place in your day.</p>
+        <div class="hero-actions"><a class="primary" href="#collection">Explore the collection <span>↘</span></a><small>30 ORIGINAL VECTOR CHARACTERS</small></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="halo"></div><div class="orbit o1"></div><div class="orbit o2"></div>
+        <img class="hero-nova" src="/characters/nova.svg" alt=""><img class="hero-pip" src="/characters/pip.svg" alt=""><img class="hero-luma" src="/characters/luma.svg" alt="">
+        <b class="spark s1">✦</b><b class="spark s2">✧</b><b class="spark s3">·</b></div>
+    </section>
+    <section class="collection" id="collection">
+      <div class="section-head"><div><p class="eyebrow">THE WHOLE CONSTELLATION</p><h2>Meet the residents.</h2></div><p class="aside">No two are quite alike.<br>All of them are happy you're here.</p></div>
+      <div class="toolbar" role="search">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search names or moods..." autocomplete="off"><kbd>/</kbd></label>
+        <label><span class="sr-only">Filter by mood</span><select id="mood"><option value="all">All moods</option><option>curious</option><option>playful</option><option>sleepy</option><option>bold</option><option>dreamy</option><option>cheerful</option><option>gentle</option><option>focused</option><option>mysterious</option><option>cosmic</option></select></label>
+        <button id="shuffle" class="control">⤨ Surprise me</button><button id="motion" class="control motion" aria-pressed="false">Ⅱ Pause motion</button>
+      </div>
+      <div class="results"><p id="count" aria-live="polite">Showing all 30 companions</p><span>SELECT A CHARACTER TO VISIT ITS STAR</span></div>
+      <div class="grid" id="grid"></div><div class="empty" id="empty" hidden><span>✧</span><h3>No orbit found.</h3><p>Try another name or choose a different mood.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="mark">✳</span> ORBIT<span class="muted">GARDEN</span></a><p>Made of vectors, curiosity, and a little stardust.</p><small>SVG COLLECTION / VOL. 001</small></footer>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body></html>
