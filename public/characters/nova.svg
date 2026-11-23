@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+<title id="title">Nova — curious companion</title><desc id="desc">An original animated curious space creature in a #8b5cf6 and #c4b5fd palette.</desc>
+<defs><linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient><radialGradient id="shine" cx=".28" cy=".18" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".48"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></radialGradient><filter id="shadow" x="-40%" y="-40%" width="180%" height="190%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<ellipse cx="80" cy="139" rx="34" ry="7" fill="#8b5cf6" opacity=".22" filter="url(#shadow)"/>
+<ellipse cx="80" cy="84" rx="58" ry="17" fill="none" stroke="#c4b5fd" stroke-opacity=".72" stroke-width="2" stroke-dasharray="4 7"><animateTransform attributeName="transform" type="rotate" values="0 80 84;360 80 84" dur="7s" repeatCount="indefinite"/></ellipse>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3.4s" repeatCount="indefinite"/>
+<path d="M55 48 45 25 68 39M105 48 115 25 92 39" fill="url(#body)" stroke="#fff" stroke-opacity=".45" stroke-width="2" stroke-linejoin="round"/>
+<g fill="url(#body)" stroke="#fff" stroke-opacity=".48" stroke-width="2.2" stroke-linejoin="round"><circle cx="80" cy="83" r="43" /></g>
+<g fill="url(#shine)"><circle cx="80" cy="83" r="43" /></g>
+<ellipse cx="65" cy="82" rx="4.5" ry="4.5" fill="#172039"><animate attributeName="ry" values="4;0.6;4" keyTimes="0;0.08;1" dur="3.1s" begin="0s" repeatCount="indefinite"/></ellipse><ellipse cx="95" cy="82" rx="4.5" ry="4.5" fill="#172039"><animate attributeName="ry" values="4;0.6;4" keyTimes="0;0.08;1" dur="3.1s" begin="0s" repeatCount="indefinite"/></ellipse>
+<path d="M73 99Q80 106 87 99" fill="none" stroke="#172039" stroke-width="3" stroke-linecap="round"/>
+<circle cx="53" cy="95" r="5" fill="#fff" opacity=".25"/><circle cx="107" cy="95" r="5" fill="#fff" opacity=".25"/>
+<path d="M53 61Q62 55 70 59M90 59Q99 55 107 61" fill="none" stroke="#fff" stroke-opacity=".34" stroke-width="2" stroke-linecap="round"/>
+</g><path d="M24 28l3 7 7 3-7 3-3 7-3-7-7-3 7-3zM131 37l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#c4b5fd" opacity=".85"/>
+</svg>
