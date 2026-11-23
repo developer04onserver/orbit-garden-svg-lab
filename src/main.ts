@@ -18,6 +18,13 @@ const empty = $<HTMLDivElement>("#empty");
 let selectedId: string | undefined;
 let paused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+function syncSvgPlayback(object: HTMLObjectElement): void {
+  const svg = object.contentDocument?.documentElement as SVGSVGElement | undefined;
+  if (!svg || typeof svg.pauseAnimations !== "function") return;
+  if (paused) svg.pauseAnimations();
+  else svg.unpauseAnimations();
+}
+
 function makeCard(character: (typeof characters)[number], index: number): HTMLElement {
   const card = document.createElement("article");
   card.className = "card";
@@ -30,11 +37,14 @@ function makeCard(character: (typeof characters)[number], index: number): HTMLEl
   link.setAttribute("aria-label", "Meet " + character.name + ", the " + character.mood + " companion");
   const art = document.createElement("div");
   art.className = "art";
-  const image = document.createElement("img");
-  image.src = character.src;
-  image.alt = "";
+  const image = document.createElement("object");
+  image.className = "character-svg";
+  image.data = character.src;
+  image.type = "image/svg+xml";
+  image.setAttribute("role", "img");
+  image.setAttribute("aria-label", character.name);
   image.width = 132; image.height = 132;
-  image.loading = "lazy"; image.decoding = "async";
+  image.addEventListener("load", () => syncSvgPlayback(image));
   art.append(image);
   const meta = document.createElement("div");
   meta.className = "meta";
@@ -72,6 +82,7 @@ function setPaused(value: boolean): void {
   document.documentElement.classList.toggle("paused", value);
   motion.setAttribute("aria-pressed", String(value));
   motion.textContent = value ? "▶ Resume motion" : "Ⅱ Pause motion";
+  document.querySelectorAll<HTMLObjectElement>("object.character-svg, object.hero-character").forEach(syncSvgPlayback);
 }
 
 search.addEventListener("input", render);
