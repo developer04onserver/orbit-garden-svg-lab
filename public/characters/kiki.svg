@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+<title id="title">Kiki — cheerful companion</title><desc id="desc">An original animated cheerful space creature in a #10b981 and #a7f3d0 palette.</desc>
+<defs><linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a7f3d0"/><stop offset="1" stop-color="#10b981"/></linearGradient><radialGradient id="shine" cx=".28" cy=".18" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".48"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></radialGradient><filter id="shadow" x="-40%" y="-40%" width="180%" height="190%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+<ellipse cx="80" cy="139" rx="34" ry="7" fill="#10b981" opacity=".22" filter="url(#shadow)"/>
+<path d="M34 115Q80 143 126 115" fill="none" stroke="#a7f3d0" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+<g><animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3.4s" repeatCount="indefinite"/>
+<path d="M44 67Q22 58 25 42M116 67Q138 58 135 42" fill="none" stroke="#a7f3d0" stroke-width="5" stroke-linecap="round"/>
+<g fill="url(#body)" stroke="#fff" stroke-opacity=".48" stroke-width="2.2" stroke-linejoin="round"><rect x="37" y="38" width="86" height="91" rx="31" /></g>
+<g fill="url(#shine)"><rect x="37" y="38" width="86" height="91" rx="31" /></g>
+<ellipse cx="65" cy="82" rx="4.5" ry="4.5" fill="#172039"><animate attributeName="ry" values="4;0.6;4" keyTimes="0;0.08;1" dur="3.1s" begin="0.41s" repeatCount="indefinite"/></ellipse><ellipse cx="95" cy="82" rx="4.5" ry="4.5" fill="#172039"><animate attributeName="ry" values="4;0.6;4" keyTimes="0;0.08;1" dur="3.1s" begin="0.41s" repeatCount="indefinite"/></ellipse>
+<path d="M73 99Q80 106 87 99" fill="none" stroke="#172039" stroke-width="3" stroke-linecap="round"/>
+<circle cx="53" cy="95" r="5" fill="#fff" opacity=".25"/><circle cx="107" cy="95" r="5" fill="#fff" opacity=".25"/>
+<path d="M53 61Q62 55 70 59M90 59Q99 55 107 61" fill="none" stroke="#fff" stroke-opacity=".34" stroke-width="2" stroke-linecap="round"/>
+</g><path d="M24 28l3 7 7 3-7 3-3 7-3-7-7-3 7-3zM131 37l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#a7f3d0" opacity=".85"/>
+</svg>
