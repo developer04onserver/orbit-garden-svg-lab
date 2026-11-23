@@ -1,0 +1,22 @@
+{
+  "name": "orbit-garden-svg-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An accessible playground featuring 30 original animated SVG companions.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
