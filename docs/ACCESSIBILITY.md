@@ -22,7 +22,7 @@ Orbit Garden is intended to remain useful without a mouse, animation, or color p
 
 - The motion control reports its state through aria-pressed.
 - prefers-reduced-motion: reduce starts the interface in a paused state.
-- The pause class sets animation-play-state to paused for CSS animations in the host document.
+- Character art is embedded as same-origin SVG documents. The controls call pauseAnimations() and unpauseAnimations() on each loaded SVG root, so the embedded SMIL loops can pause and resume in browsers that implement the SVG animation API.
 - Motion is decorative; no instruction depends on animation.
 
 ## Color and sizing
