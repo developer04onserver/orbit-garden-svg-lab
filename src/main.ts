@@ -43,7 +43,7 @@ function makeCard(character: (typeof characters)[number], index: number): HTMLEl
   image.type = "image/svg+xml";
   image.setAttribute("role", "img");
   image.setAttribute("aria-label", character.name);
-  image.width = 132; image.height = 132;
+  image.width = "132"; image.height = "132";
   image.addEventListener("load", () => syncSvgPlayback(image));
   art.append(image);
   const meta = document.createElement("div");
